@@ -30,17 +30,21 @@ $(document).ready(function () {
 
         $('#randomNum').append(randomNumbers);
 
-        $('.images').hover(function() {
-    
+        $('.images').hover(function () {
+
             $(this).css("cursor", "pointer");
-            });
-    
-            
-    
-        };
+        });
 
-        startGame();
+        $('.images').on('click', function () {
+            alert("you clicked me!");
+        })
 
-    });
+        // create a for each loop checking each images length then determining whether they have a value , set value to true
+        // IF they have a value make sure its the right one
 
 
+    };
+
+    startGame();
+
+});
