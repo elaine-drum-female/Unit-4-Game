@@ -15,17 +15,29 @@ var wrongNum = []; // wrong number
 
 // start the Game
 
-$(document).ready(function(){
-   
-    function startGame(){
+$(document).ready(function () {
 
-       randomNumbers = Math.floor(Math.random() * 100) + 1;
-       //console.log(randomNumbers);
-       var Container = $('#randomContainer');
+    function startGame() {
+
+        randomNumbers = Math.floor(Math.random() * 100) + 1;
+        //console.log(randomNumbers);
+        var Container = $('#randomContainer');
+
+        $('#randomNum').append(randomNumbers);
+
+        $('.images').hover(function() {
+    
+            $(this).css("cursor", "pointer");
+            });
+    
+            $('.images').on("click", function() {
+                alert("you clicked on me");
+            });
+    
+        };
         
-       $('#randomNum').append(randomNumbers);
-    }
+        startGame();
 
-    startGame();
+    });
 
-});
+
