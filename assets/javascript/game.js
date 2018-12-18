@@ -6,7 +6,7 @@ var totalScore; // total score
 
 var numList = []; // Array displaying number
 var chosenNum; // Chosen number
-var randomNumber; // random number
+var randomNumbers; // random number
 
 varallNumbers = []; // stores all numbers guessed
 varcorrectNum = []; // correct number
@@ -19,9 +19,11 @@ $(document).ready(function(){
    
     function startGame(){
 
-       randomNumbers = Math.floor(Math.random() * 100);
+       randomNumbers = Math.floor(Math.random() * 100) + 1;
        //console.log(randomNumbers);
-       
+       var Container = $('#randomContainer');
+        
+       $('#randomNum').append(randomNumbers);
     }
 
     startGame();
