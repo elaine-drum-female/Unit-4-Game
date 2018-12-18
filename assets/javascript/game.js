@@ -12,6 +12,11 @@ varallNumbers = []; // stores all numbers guessed
 varcorrectNum = []; // correct number
 var wrongNum = []; // wrong number
 
+var redCounter = 0; // counts reds
+var blueCounter = 0; // counts blue
+var yellowCounter = 0; // counts yellow
+var greenCounter = 0; // counts green
+
 
 // start the Game
 
@@ -30,12 +35,10 @@ $(document).ready(function () {
             $(this).css("cursor", "pointer");
             });
     
-            $('.images').on("click", function() {
-                alert("you clicked on me");
-            });
+            
     
         };
-        
+
         startGame();
 
     });
