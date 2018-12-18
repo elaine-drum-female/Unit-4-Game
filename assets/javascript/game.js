@@ -15,7 +15,15 @@ var wrongNum = []; // wrong number
 
 // start the Game
 
-function startGame() {
-    var newRandom = randomNumber(Math.floor(Math.random() * 10));
-    console.log(newRandom);
-}
+$(document).ready(function(){
+   
+    function startGame(){
+
+       randomNumbers = Math.floor(Math.random() * 100);
+       //console.log(randomNumbers);
+       
+    }
+
+    startGame();
+
+});
