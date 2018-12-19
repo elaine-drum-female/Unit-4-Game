@@ -22,6 +22,8 @@ $(document).ready(function () {
 
     function startGame() {
 
+        var targetNumber = 100;
+
         randomNumbers = Math.floor(Math.random() * 100) + 1;
         //console.log(randomNumbers);
         var Container = $('#randomContainer');
@@ -33,9 +35,13 @@ $(document).ready(function () {
             $(this).css("cursor", "pointer");
         });
 
+        counter = 0;
+
         $('.images').on('click', function () {
             var pickNumber = Math.floor(Math.random() * 10);
+            counter+= 10;
 
+            
             //console.log(pickNumber);
         })
 
