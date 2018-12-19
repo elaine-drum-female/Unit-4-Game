@@ -12,6 +12,7 @@ varallNumbers = []; // stores all numbers guessed
 varcorrectNum = []; // correct number
 var wrongNum = []; // wrong number
 
+
 var counter = 0; // counter
 
 
@@ -35,21 +36,20 @@ $(document).ready(function () {
             $(this).css("cursor", "pointer");
         });
 
+        $('.images').text(targetNumber);
+
+        //console.log(pickNumber);
+
+
         counter = 0;
 
         $('.images').on('click', function () {
-            var pickNumber = Math.floor(Math.random() * 10);
-            counter+= 10;
-
-            
-            //console.log(pickNumber);
-        })
-
-        // create a for each loop checking each images length then determining whether they have a value , set value to true
-        // IF they have a value make sure its the right one
-
-       
-
+            //var pickNumber = Math.floor(Math.random() * 10);
+            totalScore = counter += 10;
+            //console.log(totalScore);
+           var score =  $('#scoreNum');
+           score.append(totalScore);
+        });
 
 
     };
