@@ -25,29 +25,27 @@ $(document).ready(function () {
 
         randomResult = Math.floor(Math.random() * 60) + 30;
 
-        $('#randomNum').html(+ randomResult);
-        
-    
+        $('#randomNum').html(+randomResult);
+
+
         for (var i = 0; i < 4; i++) {
 
             $('.images').hover(function () {
-                
+
                 $(this).css("cursor", "pointer");
             });
         }
 
         $('.images').on('click', function () {
             randomNumbers = Math.floor(Math.random() * 11) + 1;
-            console.log(randomNumbers);
+            //console.log(randomNumbers);
+            scoreNumber = $('#scoreNum');
+            $('#scoreNum').html(randomNumbers); 
+
         });
-       
+
 
         //console.log(pickNumber);
-
-
-
-
-
     };
 
     startGame();
