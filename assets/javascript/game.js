@@ -2,19 +2,19 @@
 
 var winsCounter = 0; // wins
 var lossesCounter = 0; // losses
-var totalScore; // total score
+var totalScore = null; // total score
+var images;
 
 var numList = []; // Array displaying number
-var chosenNum= null; // Chosen number
+var chosenNum = null; // Chosen number
 var randomNumbers; // random number
 
 varallNumbers = []; // stores all numbers guessed
 varcorrectNum = []; // correct number
 var wrongNum = []; // wrong number
 
-
 var counter = 0; // counter
-
+var scoreNumber;
 
 
 // start the Game
@@ -23,33 +23,29 @@ $(document).ready(function () {
 
     function startGame() {
 
-        var targetNumber = 100;
+        randomResult = Math.floor(Math.random() * 60) + 30;
 
-        randomNumbers = Math.floor(Math.random() * 100) + 1;
-        //console.log(randomNumbers);
-        var Container = $('#randomContainer');
+        $('#randomNum').html(+ randomResult);
+        
+    
+        for (var i = 0; i < 4; i++) {
 
-        $('#randomNum').append(randomNumbers);
+            $('.images').hover(function () {
+                
+                $(this).css("cursor", "pointer");
+            });
+        }
 
-        $('.images').hover(function () {
-
-            $(this).css("cursor", "pointer");
+        $('.images').on('click', function () {
+            randomNumbers = Math.floor(Math.random() * 11) + 1;
+            console.log(randomNumbers);
         });
-
-        $('.images').text(targetNumber);
+       
 
         //console.log(pickNumber);
 
 
-        counter = 0;
 
-        $('.images').on('click', function () {
-            //var pickNumber = Math.floor(Math.random() * 10);
-            totalScore = counter += 10;
-            //console.log(totalScore);
-           var score =  $('#scoreNum');
-           score.append(totalScore);
-        });
 
 
     };
