@@ -5,17 +5,15 @@ var lossesCounter = 0; // losses
 var totalScore; // total score
 
 var numList = []; // Array displaying number
-var chosenNum; // Chosen number
+var chosenNum= null; // Chosen number
 var randomNumbers; // random number
 
 varallNumbers = []; // stores all numbers guessed
 varcorrectNum = []; // correct number
 var wrongNum = []; // wrong number
 
-var redCounter = 0; // counts reds
-var blueCounter = 0; // counts blue
-var yellowCounter = 0; // counts yellow
-var greenCounter = 0; // counts green
+var counter = 0; // counter
+
 
 
 // start the Game
@@ -36,11 +34,16 @@ $(document).ready(function () {
         });
 
         $('.images').on('click', function () {
-            alert("you clicked me!");
+            var pickNumber = Math.floor(Math.random() * 10);
+
+            //console.log(pickNumber);
         })
 
         // create a for each loop checking each images length then determining whether they have a value , set value to true
         // IF they have a value make sure its the right one
+
+       
+
 
 
     };
