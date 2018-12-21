@@ -1,5 +1,9 @@
-#container {
+body {
     background:url('https://www.toptal.com/designers/subtlepatterns/patterns/morocco.png');
+
+}
+
+#container {
     width:100%;
     padding: 10px;
 }
