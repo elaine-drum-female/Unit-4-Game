@@ -1,7 +1,6 @@
 #container {
     background:url('https://www.toptal.com/designers/subtlepatterns/patterns/morocco.png');
     width:100%;
-    height:100vh;
     padding: 10px;
 }
 
@@ -23,6 +22,9 @@ header {
     width:50%;
     padding: 20px 10px;
     color:green;
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 #randomContainer {
@@ -44,4 +46,8 @@ header {
     padding: 0 10px;
     margin-left: 10px;
    
+}
+
+#crystalsContainer {
+    clear:both;
 }
