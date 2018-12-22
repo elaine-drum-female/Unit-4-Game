@@ -68,3 +68,10 @@ header {
     background: lightseagreen;
     padding: 10px;
 }
+
+#scoreNum {
+    background: lightseagreen;
+    display: block;
+    padding: 10px;
+    height:100px;
+}
