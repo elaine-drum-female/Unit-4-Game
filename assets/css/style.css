@@ -1,0 +1,83 @@
+body {
+    background:url('https://www.toptal.com/designers/subtlepatterns/patterns/morocco.png');
+
+}
+
+#container {
+    width:100%;
+    padding: 10px;
+}
+
+header {
+    background:brown;
+    width:200px;
+    text-align:center;
+    color:#fff;
+}
+
+    h1 {
+        font-size:24px;
+        padding:20px 0;
+    }
+
+
+#info {
+    background:burlywood;
+    width:500px;
+    padding: 20px 10px;
+    color:green;
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#randomContainer {
+    margin-top: 10px;
+    width: 130px;
+    height: 70px;
+    background: green;
+    font-size:24px;
+    padding: 10px;
+    float: left;
+}
+
+#winslosses {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: turquoise;
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+#winslosses p {
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+#crystalsContainer {
+    clear:both;
+}
+
+#totalScoreBox {
+    width: 200px;
+    /* background: lightseagreen; */
+    color: white;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+#totalScoreBox p {
+    background: lightseagreen;
+    padding: 10px;
+}
+
+#scoreNum {
+    background: lightseagreen;
+    display: block;
+    padding: 10px;
+    height:100px;
+    font-size:24px;
+}

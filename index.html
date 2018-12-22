@@ -20,7 +20,7 @@
         <header>
             <h1>CrystalsCollector</h1>
         </header>
-        <div>
+        <div id="info">
             <p>You will be given a random number at the start of the game. </p>
             <p>There are four crystals below. By clicking on a crystal you will add a
                 specific amount of points to your total score.</p>
@@ -32,13 +32,13 @@
                 crystal.
             </p>
         </div>
-        <div id="randomContainer numberBox">
+        <div id="randomContainer">
             <span id="randomNum"></span>
         </div>
-        <div>
+        <div id="winslosses">
             <p><span id="winnercaption"></span></p>
             <p>Wins: <span id="wins">0</span></p>
-            <p>Loses: <span id="losses">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
         </div>
         <div id="crystalsContainer">
             <img src="assets/images/red.png" class="images" id="red" alt="red crystal" />
@@ -47,8 +47,8 @@
             <img src="assets/images/green.png" class="images" id="green" alt="green crystal" />
         </div>
     </div>
-    <p>Your total score is: </p>
-    <div class="numberBox">
+    <div id="totalScoreBox">
+        <p>Your total score is: </p>
         <span id="scoreNum"></span>
     </div>
 
