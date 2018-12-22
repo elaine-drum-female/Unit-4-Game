@@ -24,14 +24,14 @@ $(document).ready(function () {
 
         if (scoreNumber === randomResult) {
             winsCounter++;
-            $('#winnercaption').text("YOU WIN!");
+            $('#winnercaption').text("You Win!");
             $('#wins').text(winsCounter);
             //(add the winnerscaption and wins text)
             startGame();
 
         } else if (scoreNumber > randomResult) {
             lossesCounter++;
-            $('#winnercaption').text("YOU LOSE!");
+            $('#winnercaption').text("You Lose!");
             $('#losses').text(lossesCounter);
             //(add lose text)
             startGame();
