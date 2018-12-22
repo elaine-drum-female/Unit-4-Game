@@ -58,10 +58,10 @@ header {
 
 #totalScoreBox {
     width: 200px;
-    background: lightseagreen;
+    /* background: lightseagreen; */
     color: white;
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 #totalScoreBox p {
