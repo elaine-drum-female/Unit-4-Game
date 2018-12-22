@@ -55,3 +55,16 @@ header {
 #crystalsContainer {
     clear:both;
 }
+
+#totalScoreBox {
+    width: 200px;
+    background: lightseagreen;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#totalScoreBox p {
+    background: lightseagreen;
+    padding: 10px;
+}
