@@ -31,6 +31,7 @@ $(document).ready(function () {
 
         } else if (scoreNumber > randomResult) {
             lossesCounter++;
+            $('#winnercaption').text("YOU LOSE!");
             $('#losses').text(lossesCounter);
             //(add lose text)
             startGame();
